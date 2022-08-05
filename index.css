@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+ 
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-style: groove;
+    border-width: 5px;
+    background: #dce3e2;  /* fallback for old browsers */
+    margin-bottom: 30px;
+     
+    
+   
+}
+.logo {
+    height: 150%;
+    margin-bottom: 30px;
+
+}
+.lista-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+.lista-nav li {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif
+}
+.Invitación {
+    display: flex;
+   margin-top: 2em;
+    align-items: center;
+    width: 100%;
+    flex-direction: row-reverse;
+
+
+
+}
+
+.imagenrara {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+.seg-parte{
+   
+    width: 45%;
+    justify-content: space-around;
+    margin-left: 20%;
+
+}
+.imagenfuego {
+   
+     
+}
+.seg-parte h1{
+    font-size: 3em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.seg-parte p {
+    font-family: 'Catamaran', sans-serif;
+    width: 80%;
+    font-size: 1em;
+}
+.seg-parte button {
+     
+     background-color: white;  
+     color: inherit;
+     font-weight: 600;
+     border-radius: 10px;
+     padding: 1% 3%;
+     margin-top: 30px;
+     gap: 40px;
+} 
+.lista-nav li:hover {
+    text-decoration: underline;
+}
+ 
+
+.masinfocuadrado {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     margin-top: 3em;
+     margin-bottom: 3em;
+     margin-left: 5%;
+      
+     
+}
+.masinfocuadrado p{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 3em;
+    margin-right: 12%;
+      padding: 1px ;
+      box-shadow: 6px 6px 13px -2px rgba(0,0,0,0.83);
+      -webkit-caja-sombra: 6px 6px 13px -2px rgba(0,0,0,0.83);
+      -moz-caja-sombra: 6px 6px 13px -2px rgba(0,0,0,0.83);
+      gap: 40px;
+      font-family: 'Merriweather', serif;
+      border-left: 50% solid black;
+      text-align: center;
+      font-size: 1.3em;
+      padding-left: 1em;
+      padding-right: 1em;
+       
+
+}
+.fondomasgrande {
+    background-color: rgb(68, 71, 70);
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
