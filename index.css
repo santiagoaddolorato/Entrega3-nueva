@@ -15,9 +15,17 @@ a {
     justify-content: space-around;
     align-items: center;
     border-bottom-style: groove;
-    border-width: 5px;
+    
     background: #dce3e2;  /* fallback for old browsers */
     margin-bottom: 30px;
+    position: fixed;
+    background: #ED213A;  /* fallback for old browsers */
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0;
+    z-index: 1;
+
      
     
    
@@ -27,6 +35,17 @@ a {
     margin-bottom: 30px;
 
 }
+.nav-bar {
+    display: flex;
+}
+.nav-bar i {
+    font-size: 36px;
+    display: none;
+}
+#toggle-menu {
+    display: none;
+}
+
 .lista-nav {
     list-style: none;
     display: flex;
@@ -39,10 +58,11 @@ a {
 }
 .Invitación {
     display: flex;
-   margin-top: 2em;
     align-items: center;
     width: 100%;
     flex-direction: row-reverse;
+
+
 
 
 
@@ -52,7 +72,7 @@ a {
     width: 40%;
     height: 300px;
     display: flex;
-    margin-top: 70px;
+    margin-top: 150px;
     margin-bottom: 70px;
     
 }
@@ -62,10 +82,6 @@ a {
     justify-content: space-around;
     margin-left: 20%;
 
-}
-.imagenfuego {
-   
-     
 }
 .seg-parte h1{
     font-size: 3em;
@@ -101,6 +117,8 @@ a {
      margin-top: 3em;
      margin-bottom: 3em;
      margin-left: 5%;
+     
+     
       
      
 }
@@ -128,8 +146,64 @@ a {
 
 }
 .fondomasgrande {
-    background-color: rgb(68, 71, 70);
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     padding-bottom: 2em;
     margin-bottom: 3em;
     margin-top: 3em;
+}
+@media (max-width: 992px){
+    .seg-parte {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+         
+    }
+    .seg-parte h1 {
+        display: block;
+        width: 100%;
+    }
+    .seg-parte p {
+        max-width: 100%;
+        font-size: 1.1em;
+    }
+    .seg-parte button {
+        align-items: center;
+        justify-content: center;
+    }
+    .imagenfuego {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .lista-nav {
+        width: 100%;
+        background-color: white;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+        font-size: 25px;
+    }
+    .nav-bar i {
+        display: block;
+       
+    }
+    #toggle-menu:checked ~ .lista-nav  {
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+
+    }
+}
+@media (max-width: 711px) {
+    .masinfocuadrado p {
+        height: 100%;
+    }
 }
